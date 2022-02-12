@@ -60,9 +60,37 @@ p{
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
-}
-
-#logo:hover{
+  &:hover{
   color: #fff;
   text-decoration: none;
+  }
+}
+/*上記のようにネストができるのはscssのおかげ*/
+/*Sassという言語に対応しているフォーマットがscss*/
+
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+  a {
+    color: #555;
+    &:hover {
+      color: #222;
+    }
+  }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 15px;
+    }
+  }
+
 }
