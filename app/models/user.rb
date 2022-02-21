@@ -10,7 +10,7 @@ class User < ApplicationRecord
 
   #渡された文字列のハッシュを返す
   def User.digest(string)
-    cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
+    cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :#メソッドや定数を呼び出す
                                                   BCrypt::Engine.cost
     BCrypt::Password.create(string, cost: cost)
   end
