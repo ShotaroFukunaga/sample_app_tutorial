@@ -17,6 +17,9 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', '3.1.12'
+gem 'faker'
+gem 'will_paginate', '3.1.8'
+gem 'bootstrap-will_paginate', '1.0.0'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
