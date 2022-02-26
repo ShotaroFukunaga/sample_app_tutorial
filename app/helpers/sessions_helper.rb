@@ -23,7 +23,7 @@ module SessionsHelper
   end
 
   def logged_in?
-    !current_user.nil?
+    !current_user.nil?# ! = banでnilがfalseになる、コントローラーのunlessの判定にtukau
   end
 
   def forget(user)
